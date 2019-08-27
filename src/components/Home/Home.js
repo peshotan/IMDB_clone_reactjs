@@ -34,7 +34,7 @@ class Home extends Component {
         this.setState({
             movies : [...this.state.movies, ...response.results],
             currentPage : response.page,
-            heroImage : this.state.heroImage || response.results[5],
+            heroImage : this.state.heroImage || response.results[Math.floor(Math.random()*20)],
             loading : false,
             totalPages : response.total_pages
         });
