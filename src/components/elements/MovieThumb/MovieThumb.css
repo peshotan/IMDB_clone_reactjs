@@ -1,0 +1,49 @@
+.rmdb-moviethumb {
+  min-height: 200px;
+  position: relative;
+}
+.rmdb-moviethumb img {
+  width: 100%;
+  min-height: 400px;
+  transition: all 0.3s;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  opacity: 0.8;
+}
+
+.rmdb-moviethumb-middle {
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.rmdb-moviethumb:hover img {
+  opacity: 0.5;
+}
+
+.rmdb-moviethumb:hover .rmdb-moviethumb-middle {
+  opacity: 1;
+}
+
+.rmdb-moviethumb-middle-text {
+  font-family: 'Abel', sans-serif;
+  color: white;
+  font-size: 30px;
+  padding: 16px 32px;
+}
